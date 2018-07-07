@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>React App</title>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      require.config({
+        paths: {
+          'react': 'https://unpkg.com/react@16.4.1/umd/react.production.min',
+          'react-dom': 'https://unpkg.com/react-dom@16.4.1/umd/react-dom.production.min'
+        }
+      });
+      
+      require(['./main']);
+    </script>
+  </body>
+</html>
